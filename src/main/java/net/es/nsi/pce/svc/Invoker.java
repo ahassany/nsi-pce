@@ -15,7 +15,7 @@ public class Invoker {
         HttpConfig aggConf = htProv.getConfig("agg");
 
         JsonNsaConfigProvider nsaConf = JsonNsaConfigProvider.getInstance();
-        nsaConf.setFilename("config/nsa.conf");
+        nsaConf.setFilename("config/nsa.json");
         nsaConf.loadConfig();
 
 
