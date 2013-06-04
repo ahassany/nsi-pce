@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://www.glif.is/working-groups/tech/dtox#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdf:Description rdf:about="urn:ogf:network:stp:netherlight.ets:cph-80">
+    <rdf:type rdf:resource="http://www.glif.is/working-groups/tech/dtox#STP"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <connectedTo rdf:resource="urn:ogf:network:stp:northernlight.ets:ams-80"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="urn:ogf:network:stp:northernlight.ets:ams-80">
+    <rdf:type rdf:resource="http://www.glif.is/working-groups/tech/dtox#STP"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <connectedTo rdf:resource="urn:ogf:network:stp:netherlight.ets:cph-80"/>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="urn:ogf:network:nsnetwork:netherlight.ets">
+    <rdfs:label xml:lang="en">netherlight.ets</rdfs:label>
+    <hasSTP rdf:resource="urn:ogf:network:stp:netherlight.ets:cph-80"/>
+    <hasSTP rdf:resource="urn:ogf:network:stp:netherlight.ets:cph-82"/>
+    <hasSTP rdf:resource="urn:ogf:network:stp:netherlight.ets:pra-83"/>
+    <rdf:type rdf:resource="http://www.glif.is/working-groups/tech/dtox#NSNetwork"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <managedBy rdf:resource="urn:ogf:network:nsa:netherlight"/>
+    <locatedAt rdf:resource="urn:ogf:network:nsnetwork:netherlight.ets:location"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="urn:ogf:network:nsnetwork:northernlight.ets">
+    <rdfs:label xml:lang="en">northernlight.ets</rdfs:label>
+    <hasSTP rdf:resource="urn:ogf:network:stp:northernlight.ets:ams-80"/>
+    <hasSTP rdf:resource="urn:ogf:network:stp:northernlight.ets:poz-3"/>
+    <rdf:type rdf:resource="http://www.glif.is/working-groups/tech/dtox#NSNetwork"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <managedBy rdf:resource="urn:ogf:network:nsa:northernlight"/>
+    <locatedAt rdf:resource="urn:ogf:network:nsnetwork:northernlight.ets:location"/>
+  </rdf:Description>
+
+
+
+  <rdf:Description rdf:about="urn:ogf:network:nsa:northernlight">
+    <adminContact rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> NSA: OpenNSA (NORDUnet)
+      Project Management: Jerry Sobieski email: jerry@nordu.net mobile: 1-301-346-1849 skype:
+      jerry.sobieski Software Development: Henrik Thostrup-Jensen email: htj@nordu.net skype:
+      henrik.thostrup.jensen </adminContact>
+    <csProviderEndpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+      >https://orval.grid.aau.dk:9443/NSI/services\ /ConnectionService</csProviderEndpoint>
+    <rdf:type rdf:resource="http://www.glif.is/working-groups/tech/dtox#NSA"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <managing rdf:resource="urn:ogf:network:nsnetwork:northernlight.ets"/>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="urn:ogf:network:nsnetwork:northernlight.ets:location">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.glif.is/working-groups/tech/dtox#Location"/>
+    <long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.641</long>
+    <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">55.637</lat>
+  </rdf:Description>
+
+
+
+  <rdf:Description rdf:about="urn:ogf:network:nsa:netherlight">
+    <adminContact rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> OpenDRAC (SURFnet) Proj
+      Manager: John MacAuley email: john.macauley@surfnet.nl phone: 1-613-220-6817 skype:
+      john.macauley Software Developer: John MacAuley email: john.macauley@surfnet.nl phone:
+      1-613-220-6817 skype: john.macauley </adminContact>
+    <csProviderEndpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      http://dracproxy01.surfnet.nl:8080/nsi-v1/ConnectionServiceProvider </csProviderEndpoint>
+    <rdfs:label xml:lang="en">netherlight</rdfs:label>
+    <rdf:type rdf:resource="http://www.glif.is/working-groups/tech/dtox#NSA"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <managing rdf:resource="urn:ogf:network:nsnetwork:netherlight.ets"/>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="urn:ogf:network:nsnetwork:netherlight.ets:location">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.glif.is/working-groups/tech/dtox#Location"/>
+    <long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.953</long>
+    <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">52.357</lat>
+  </rdf:Description>
+
+
+</rdf:RDF>
